@@ -1,0 +1,57 @@
+p {
+  font-family: Lato;
+}
+
+.card-size
+{
+  width:150px;
+  height: 100px;
+}
+.completed
+{
+  border-color:rgba(224, 255, 224, 0.425);
+  background-color: rgba(224, 255, 224, 0.425);
+}
+.pending
+{
+  border-color:rgb(252, 229, 229);
+   background-color: rgb(252, 229, 229);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.card-size
+{
+  width:250px;
+  height:100px;
+}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{.card-size
+{
+  width:150px;
+  height: 100px;
+}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card-size
+{
+  width:150px;
+  height: 100px;
+}}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {.card-size
+{
+  width:150px;
+  height: 100px;
+}}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {.card-size
+{
+  width:200px;
+  height: 120px;
+}}
