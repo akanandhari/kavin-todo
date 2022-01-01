@@ -1,7 +1,7 @@
 export class todoList {
   public date: Date;
   public activity: string;
-  public catagories: any[];
+  public catagory: any[];
   public state: string;
   public isActive: boolean = true;
 }
