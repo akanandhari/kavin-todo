@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap/modal/modal.module';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { dummyList } from '../api/storage';
 import { AddTodoComponent } from './add-todo/add-todo.component';
 @Component({
@@ -22,8 +22,6 @@ this.todoList=new dummyList().getData(10);
       {
         this.todoList.push(res);
       }    
-    }, (REASON) => {
-
     });
  }
 }

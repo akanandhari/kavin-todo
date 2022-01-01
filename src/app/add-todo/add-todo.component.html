@@ -1,5 +1,15 @@
-.
-<form class="form-inline" [formGroup]="todoForm">
+
+<div class="modal-header">
+      <header class="title">
+       <h5> Add New Task
+       </h5>
+      </header>
+      <div type="button" class="close float-right" aria-label="Close" style="color:#ff9800"  (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </div>
+    </div>
+<div class="modal-body">
+<form  [formGroup]="todoForm">
 <div class="row">
 <div class="col-12">
  <div class="form-group">
@@ -34,7 +44,7 @@
 </div>
 </div>
   <div class="form-group">
-   <label>date</label>
+   <label>Date</label>
     <div class="input-group">
       <input class="form-control" placeholder="yyyy-mm-dd"
             name="dp" formControlName="date" ngbDatepicker #d="ngbDatepicker">
@@ -44,4 +54,5 @@
     </div>
   </div>
 </form>
+</div>
 

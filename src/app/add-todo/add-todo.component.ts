@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-add-todo',
   templateUrl: './add-todo.component.html',
@@ -8,7 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class AddTodoComponent implements OnInit {
 
-  constructor() { }
+  constructor(public activeModal:NgbActiveModal) { }
 
   ngOnInit() {
   }
