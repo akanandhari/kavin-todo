@@ -12,7 +12,10 @@ export class AddTodoComponent implements OnInit {
 
   ngOnInit() {
   }
-  add(){}
+  add(){
+    console.log(this.todoForm.value);
+    this.activeModal.close(this.todoForm.value);
+  }
   public categories:any[]=[
     'DV/PV',
     'EXPENSES',

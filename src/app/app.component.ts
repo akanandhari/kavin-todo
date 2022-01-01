@@ -20,6 +20,7 @@ this.todoList=new dummyList().getData(10);
     this.oModal.open(AddTodoComponent, { centered: true, ariaLabelledBy: 'static', backdrop: 'static', size:'sm' }).result.then((res) => {  
       if(res)
       {
+        res.date=new Date().setFullYear(res.date.year,res.date.month-1,res.date.day);;
         this.todoList.push(res);
       }    
     });
