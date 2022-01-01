@@ -12,6 +12,7 @@ export class AddTodoComponent implements OnInit {
 
   ngOnInit() {
   }
+  add(){}
   public categories:any[]=[
     'DV/PV',
     'EXPENSES',
