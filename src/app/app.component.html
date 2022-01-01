@@ -1,12 +1,15 @@
-
+<div class="container">
 <header>
 <h4>
 Work Tracker
 </h4>
 </header>
 <div class="row">
-  <div class="col-12">
-    <button class="btn btn-primary float-right mr-2" (click)="addnew()">Add new</button>
+  <div class="col-12">  
+    <i class=" bi c-i-a bi-calendar2-plus-fill float-right"
+    (click)="addnew()"
+    >    
+    </i>
   </div>
 </div>
 
@@ -18,25 +21,18 @@ Work Tracker
 {{todo.activity}}
 </div>
 <div  [ngSwitch]="todo.state" class="m-2">
- <svg *ngSwitchCase="'completed'"
- style="margin:5px 5px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#8bc34a" class="bi bi-calendar2-check-fill float-left" viewBox="0 0 16 16">
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zm-2.6 5.854a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
-</svg>
- <svg *ngSwitchCase="'pending'"  style="margin:5px 5px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="bi-calendar2-check-fill" class="bi bi-calendar2-check-fill float-left" viewBox="0 0 16 16"> 
-  <path d="M6.146 8.146a.5.5 0 0 1 .708 0L8 9.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 0 1 0-.708z"/>
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
-    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"/>
-
-
-</svg> 
+ <i *ngSwitchCase="'completed'"
+ class="c-i bi bi-calendar2-check-fill float-left c-i-g" >
+  
+</i>
+ <i *ngSwitchCase="'pending'"    width="16" height="16"  class="c-i bi bi-calendar2-x-fill float-left" > 
+</i> 
 
 {{todo.date |date:'dd/mm/yyyy'}}
 </div>
-
 {{todo.catagories}}
-
-
 </div>
 </ng-container>
+</div>
 </div>
 

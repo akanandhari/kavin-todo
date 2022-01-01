@@ -7,6 +7,26 @@ p {
   width:150px;
   height: 100px;
 }
+
+.c-i-a
+{
+   font-size:30px !important;
+ margin:10px;
+  
+  color: rgb(55, 204, 253) !important;
+  
+}
+.c-i
+{
+  margin:0px 5px;color:red;
+  width:16px;
+  height:16px;
+}
+.c-i-g
+{
+color:#8bc34a;
+
+}
 .completed
 {
   border-color:rgba(224, 255, 224, 0.425);
